@@ -1,0 +1,118 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Sunset gradient */
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Center the main container */
+.container {
+  max-width: 550px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+/* Input and button area */
+.input_area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #7ec0ee;
+  outline: none;
+}
+
+/* Main action button */
+button {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #fff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Task list section */
+.task-list {
+  margin-top: 10px;
+}
+
+/* Individual task item */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f8ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Task text */
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+/* Completed task styling */
+.completed {
+  text-decoration: line-through;
+  color: green;
+}
+
+/* Button styles for actions */
+.edit-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.complete-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
